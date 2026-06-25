@@ -1,10 +1,10 @@
 name: Release & Publish
 
 on:
-  push:
-    tags:
-      - "V*"
   workflow_dispatch:
+  push:
+    branches:
+      - master
     inputs:
       release_apps:
         description: "Build popular apps"
